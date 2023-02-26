@@ -1,13 +1,21 @@
-import { Fragment } from "react";
-import "./App.css";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import CharacterList from "./components/CharacterList";
+import CharacterDetails from "./components/CharacterDetails";
 
-function App() {
+const App = () => {
   return (
-    <Fragment>
-      <CharacterList />
-    </Fragment>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <CharacterList />
+        </Route>
+        <Route path="/character/:id">
+          <CharacterDetails />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
