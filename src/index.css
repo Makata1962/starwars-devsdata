@@ -36,3 +36,24 @@ a {
   text-decoration: none;
   color: #f9cc0b;
 }
+
+button {
+  background-color: #f9cc0b;
+  width: 13rem;
+  height: 5rem;
+  border: 0.1rem solid #f9cc0b;
+  color: #0048ff;
+  margin: 2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background-color: #0048ff;
+  border: 0.1rem solid #0048ff;
+  color: #f9cc0b;
+}
+
+ul {
+  list-style: none;
+}

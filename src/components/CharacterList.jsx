@@ -63,7 +63,7 @@ const CharacterList = () => {
     <div className={classes.character_list_container}>
       <h1>Star Wars Characters</h1>
       <SearchBox
-        className="star-war-search-box"
+        className="star_wars_searchbox"
         onChangeHandler={onSearchChange}
         placeholder="search character"
       />
