@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
 import CharacterList from "./components/CharacterList";
 import CharacterDetails from "./components/CharacterDetails";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div className="main-container">
       <Switch>
         <Route exact path="/">
           <CharacterList />
@@ -14,7 +15,7 @@ const App = () => {
           <CharacterDetails />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </div>
   );
 };
 

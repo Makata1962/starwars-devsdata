@@ -1,0 +1,15 @@
+$primary-text-color: #f9cc0b;
+$primary-background-color: #0c1d36;
+$secondary-background-color: #0c6385;
+$emphasizer-color: #0048ff;
+
+.character_list_container {
+  .pagination {
+    .button {
+      background-color: $primary-text-color;
+      color: $emphasizer-color;
+      width: 10rem;
+      height: 5rem;
+    }
+  }
+}
